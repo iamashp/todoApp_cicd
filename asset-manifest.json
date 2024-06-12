@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/todoApp_cicd/static/css/main.659f9332.css",
+    "main.js": "/todoApp_cicd/static/js/main.3e5ca355.js",
+    "static/media/bg.jpg": "/todoApp_cicd/static/media/bg.9ea8e2d1315fb1ffa30b.jpg",
+    "index.html": "/todoApp_cicd/index.html",
+    "main.659f9332.css.map": "/todoApp_cicd/static/css/main.659f9332.css.map",
+    "main.3e5ca355.js.map": "/todoApp_cicd/static/js/main.3e5ca355.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.659f9332.css",
+    "static/js/main.3e5ca355.js"
+  ]
+}
