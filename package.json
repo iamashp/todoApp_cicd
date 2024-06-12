@@ -18,7 +18,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest --detectOpenHandles",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "eslint ."
   },
   "eslintConfig": {
     "extends": [
@@ -40,8 +41,13 @@
   },
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+    "@eslint/compat": "^1.1.0",
+    "@eslint/js": "^9.4.0",
     "babel-preset-react-app": "^10.0.0",
-    "gh-pages": "^6.1.1"
+    "eslint": "^9.4.0",
+    "eslint-plugin-react": "^7.34.2",
+    "gh-pages": "^6.1.1",
+    "globals": "^15.4.0"
   },
   "babel": {
     "presets": [
