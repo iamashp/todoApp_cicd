@@ -17,7 +17,7 @@
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "jest --detectOpenHandles",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -38,9 +38,17 @@
       "last 1 safari version"
     ]
   },
-  
   "devDependencies": {
     "@babel/plugin-transform-private-property-in-object": "^7.24.7",
+    "babel-preset-react-app": "^10.0.0",
     "gh-pages": "^6.1.1"
+  },
+  "babel": {
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-private-property-in-object"
+    ]
   }
 }
