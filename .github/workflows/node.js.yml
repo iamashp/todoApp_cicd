@@ -1,0 +1,40 @@
+name: Deploy using Github Actions
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20' 
+         
+
+      - name: Clear cache
+        run: rm -rf node_modules
+
+      - name: Install dependencies
+        run: npm install --verbose
+
+      - name: Build the project
+        run: npm run build --verbose
+
+      - name: Run tests
+        run: npm test --verbose
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build # The folder the action should deploy.
